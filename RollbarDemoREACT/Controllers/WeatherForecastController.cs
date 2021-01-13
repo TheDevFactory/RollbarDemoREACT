@@ -50,6 +50,7 @@ namespace RollbarDemoREACT.Controllers
                               
 
             } catch (System.Exception ex) {
+                //Thorw Exception
                 RollbarLocator.RollbarInstance.AsBlockingLogger(TimeSpan.FromSeconds(1)).Error(ex);
 
                 return null;
