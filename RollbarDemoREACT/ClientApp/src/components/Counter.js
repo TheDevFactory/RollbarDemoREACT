@@ -14,7 +14,7 @@ export class Counter extends Component {
       currentCount: this.state.currentCount + 1
     });
 
-    throw new Error("Counter Error Thrown on Increment.");
+    //throw new Error("Counter Error Thrown on Increment.");
   }
 
   render() {
