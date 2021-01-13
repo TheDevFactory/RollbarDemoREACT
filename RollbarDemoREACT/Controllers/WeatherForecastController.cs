@@ -38,7 +38,7 @@ namespace RollbarDemoREACT.Controllers
 
                 var rng = new Random();
 
-                //throw new InvalidOperationException("data object cannot be XXXX");
+                throw new InvalidOperationException("data object cannot be XXXX");
 
                 return Enumerable.Range(1, 5).Select(index => new WeatherForecast
                 {
@@ -46,8 +46,7 @@ namespace RollbarDemoREACT.Controllers
                     TemperatureC = rng.Next(-20, 55),
                     Summary = Summaries[rng.Next(Summaries.Length)]
                 })
-                .ToArray();
-                              
+                .ToArray();            
 
             } catch (System.Exception ex) {
                 //Thorw Exception
